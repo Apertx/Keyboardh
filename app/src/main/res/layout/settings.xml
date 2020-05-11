@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<CheckBoxPreference
+		android:defaultValue="true"
+		android:key="sound"
+		android:title="Звук при нажатии"
+		android:summary="Звук щелчка при нажатии клавиши"/>
+
+	<CheckBoxPreference
+		android:defaultValue="false"
+		android:key="vibrate"
+		android:title="Вибрация при нажатии"
+		android:summary="Тактильная отдача при нажатии клавиши"/>
+
+	<!--EditTextPreference
+		android:key="size"
+		android:title="Высота клавиши"
+		android:summary="Устанавливает новый размер клавиш"
+		android:defaultValue="48"
+		android:dialogTitle="Введите высоту клавиши"/-->
+
+	<EditTextPreference
+	android:key="vibtime"
+	android:title="Продолжительность вибрации"
+	android:summary="По умолчанию 50"
+	android:defaultValue="50"
+	android:dialogTitle="Введите продолжительность вибрации"/>
+
+</PreferenceScreen>
+
