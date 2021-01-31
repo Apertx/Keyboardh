@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ package="apertx.keyboardh">
+ <uses-sdk
+  android:minSdkVersion="4"
+  android:targetSdkVersion="30"/>
+ <uses-permission android:name="android.permission.VIBRATE"/>
+ <application
+  android:label="Keyboardh"
+  android:theme="@android:style/Theme.Material">
+  <activity android:name=".SettingsActivity"/>
+  <service android:name=".Keybh"
+   android:permission="android.permission.BIND_INPUT_METHOD">
+   <meta-data android:name="android.view.im"
+    android:resource="@layout/main"/>
+   <intent-filter>
+    <action android:name="android.view.InputMethod"/>
+   </intent-filter>
+  </service>
+ </application>
+</manifest>
